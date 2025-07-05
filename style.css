@@ -8,46 +8,45 @@
 
 body {
   font-family: 'Open Sans', sans-serif;
-  background: #2c2f33;
-  color: #ffffff;
+  background: #1e1f26;
+  color: #f5f5f5;
   line-height: 1.6;
 }
 
-/* Header */
 header {
-  background: #23272a;
+  background: #16171d;
   padding: 20px 40px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
 }
 
 header h1 {
   font-size: 1.8rem;
-  color: #ffffff;
   font-family: 'Poppins', sans-serif;
+  color: #ffffff;
 }
 
 nav a {
   margin-left: 20px;
   text-decoration: none;
-  color: #aaa;
+  color: #a0a0a0;
   font-family: 'Montserrat', sans-serif;
   font-weight: 600;
   transition: color 0.3s;
 }
 
 nav a:hover {
-  color: #fff;
+  color: #ffffff;
 }
 
-/* Hero Section */
 .hero {
-  background: linear-gradient(to right, #5865f2, #404eed);
-  padding: 80px 20px;
+  background: linear-gradient(135deg, #6e78ff, #8e44ad);
+  padding: 100px 20px;
   text-align: center;
-  color: #ffffff;
+  color: #f5f5f5;
 }
 
 .hero h2 {
@@ -59,26 +58,24 @@ nav a:hover {
 .hero p {
   font-size: 1.2rem;
   margin-bottom: 30px;
-  font-family: 'Open Sans', sans-serif;
 }
 
 .hero a.cta {
   padding: 12px 24px;
-  background: #fff;
+  background: #ffffff;
   color: #23272a;
-  border-radius: 10px;
-  text-decoration: none;
+  border-radius: 12px;
   font-weight: bold;
   font-family: 'Montserrat', sans-serif;
+  text-decoration: none;
   transition: all 0.3s ease;
 }
 
 .hero a.cta:hover {
-  background: #e3e3e3;
+  background: #ddd;
   transform: scale(1.05);
 }
 
-/* Section umum */
 .section {
   padding: 60px 20px;
   max-width: 1100px;
@@ -87,8 +84,8 @@ nav a:hover {
 
 .section h3 {
   font-size: 2rem;
-  margin-bottom: 30px;
   text-align: center;
+  margin-bottom: 30px;
   font-family: 'Poppins', sans-serif;
 }
 
@@ -100,41 +97,41 @@ nav a:hover {
 }
 
 .card {
-  background: #36393f;
-  border-radius: 12px;
+  background: rgba(54, 57, 63, 0.6);
+  backdrop-filter: blur(8px);
+  border-radius: 16px;
   padding: 20px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.3);
-  transition: transform 0.3s ease;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s;
   text-align: center;
 }
 
 .card:hover {
-  transform: translateY(-5px);
+  transform: translateY(-6px);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.4);
 }
 
 .card img {
   max-width: 100%;
-  border-radius: 8px;
+  border-radius: 10px;
   margin-bottom: 15px;
 }
 
 .card h4 {
-  font-size: 1.2rem;
-  margin-bottom: 10px;
   font-family: 'Poppins', sans-serif;
+  font-size: 1.3rem;
+  margin-bottom: 10px;
 }
 
 .card p {
   font-size: 0.95rem;
-  font-family: 'Open Sans', sans-serif;
 }
 
-/* Tombol Lihat & Pesan */
 .card a.cta {
   display: inline-block;
   margin-top: 15px;
-  padding: 10px 20px;
-  background: #5865f2;
+  padding: 10px 22px;
+  background: #7289da;
   color: #fff;
   text-decoration: none;
   border-radius: 8px;
@@ -144,13 +141,13 @@ nav a:hover {
 }
 
 .card a.cta:hover {
-  background: #404eed;
+  background: #99aab5;
   transform: scale(1.05);
 }
 
 /* Footer */
 footer {
-  background: #1e2124;
+  background: #16171d;
   text-align: center;
   padding: 20px;
   font-size: 0.9rem;
@@ -159,7 +156,7 @@ footer {
 }
 
 footer a {
-  color: #5865f2;
+  color: #7289da;
   margin: 0 10px;
   text-decoration: none;
 }
