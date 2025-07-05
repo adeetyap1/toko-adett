@@ -1,34 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Open+Sans:wght@400;600&family=Poppins:wght@600;700&display=swap');
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
 }
 
 body {
+  font-family: 'Open Sans', sans-serif;
   background: #2c2f33;
   color: #ffffff;
   line-height: 1.6;
 }
 
+/* Header */
 header {
   background: #23272a;
   padding: 20px 40px;
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 header h1 {
   font-size: 1.8rem;
   color: #ffffff;
+  font-family: 'Poppins', sans-serif;
 }
 
 nav a {
   margin-left: 20px;
   text-decoration: none;
   color: #aaa;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
   transition: color 0.3s;
 }
 
@@ -36,39 +42,46 @@ nav a:hover {
   color: #fff;
 }
 
+/* Hero Section */
 .hero {
   background: linear-gradient(to right, #5865f2, #404eed);
-  padding: 100px 20px;
+  padding: 80px 20px;
   text-align: center;
+  color: #ffffff;
 }
 
 .hero h2 {
   font-size: 3rem;
   margin-bottom: 20px;
+  font-family: 'Poppins', sans-serif;
 }
 
 .hero p {
   font-size: 1.2rem;
   margin-bottom: 30px;
+  font-family: 'Open Sans', sans-serif;
 }
 
-.cta {
+.hero a.cta {
   padding: 12px 24px;
   background: #fff;
   color: #23272a;
   border-radius: 10px;
   text-decoration: none;
   font-weight: bold;
+  font-family: 'Montserrat', sans-serif;
   transition: all 0.3s ease;
 }
 
-.cta:hover {
+.hero a.cta:hover {
   background: #e3e3e3;
+  transform: scale(1.05);
 }
 
+/* Section umum */
 .section {
   padding: 60px 20px;
-  max-width: 1000px;
+  max-width: 1100px;
   margin: auto;
 }
 
@@ -76,8 +89,10 @@ nav a:hover {
   font-size: 2rem;
   margin-bottom: 30px;
   text-align: center;
+  font-family: 'Poppins', sans-serif;
 }
 
+/* Cards */
 .cards {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -90,51 +105,65 @@ nav a:hover {
   padding: 20px;
   box-shadow: 0 0 10px rgba(0,0,0,0.3);
   transition: transform 0.3s ease;
+  text-align: center;
 }
 
 .card:hover {
   transform: translateY(-5px);
 }
 
-.card h4 {
-  margin-bottom: 10px;
-  font-size: 1.2rem;
+.card img {
+  max-width: 100%;
+  border-radius: 8px;
+  margin-bottom: 15px;
 }
 
+.card h4 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.card p {
+  font-size: 0.95rem;
+  font-family: 'Open Sans', sans-serif;
+}
+
+/* Tombol Lihat & Pesan */
+.card a.cta {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 20px;
+  background: #5865f2;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  font-family: 'Montserrat', sans-serif;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.card a.cta:hover {
+  background: #404eed;
+  transform: scale(1.05);
+}
+
+/* Footer */
 footer {
   background: #1e2124;
   text-align: center;
   padding: 20px;
   font-size: 0.9rem;
   color: #888;
-  margin-top: 40px;
+  font-family: 'Montserrat', sans-serif;
 }
 
-.sosmed a {
+footer a {
+  color: #5865f2;
   margin: 0 10px;
-  display: inline-block;
+  text-decoration: none;
 }
 
-.login-container {
-  max-width: 400px;
-  margin: 100px auto;
-  padding: 20px;
-  text-align: center;
-}
-
-input {
-  padding: 10px;
-  width: 80%;
-  border-radius: 8px;
-  border: none;
-  margin-bottom: 10px;
-}
-
-button {
-  background: #5865f2;
-  color: white;
-  border: none;
-  padding: 10px 20px;
-  cursor: pointer;
-  border-radius: 8px;
-}
+footer a:hover {
+  color: #ffffff;
+  }
